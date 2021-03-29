@@ -1,5 +1,8 @@
-
 function factorial(n) {
-  return n  ? n * factorial(n - 1) : 1;
-
+  let i = 1;
+  while (n > 0) {
+    i = i * n;
+    n--;
+  }
+  return i;
 }
