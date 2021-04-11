@@ -1,3 +1,5 @@
 function filterRange(arr, a, b) {
-  // ваш код...
+  let novMassiv = arr.filter(item => (a <= item && item <= b));
+  return novMassiv;
 }
+alert(filterRange);
