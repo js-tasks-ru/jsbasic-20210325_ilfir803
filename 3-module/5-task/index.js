@@ -3,7 +3,7 @@ function getMinMax(str) {
   arr = arr.map(function (item) {
     return +item;
   })
-  let outPut = arr.filter((item) => item !== 'NaN' && isFinite(item));
+  let outPut = arr.filter((item) => isFinite(item));
   let max = Math.max.apply(null, outPut);
   let min = Math.min.apply(null, outPut);
 
